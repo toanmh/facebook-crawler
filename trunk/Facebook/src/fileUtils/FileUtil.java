@@ -1,5 +1,9 @@
 package fileUtils;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: shreevats
@@ -8,4 +12,16 @@ package fileUtils;
  * To change this template use File | Settings | File Templates.
  */
 public class FileUtil {
+    public static void loadFile(String fileName, List<String> lines) {
+        lines.clear();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line = null;
+            while((line = br.readLine()) != null) {
+                lines.add(line);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
