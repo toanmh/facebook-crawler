@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Facebook">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Random/facebook-java-api-3.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../Random/facebook-java-api-3.0.2/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/fb4j-0.1.3-alpha.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../Random/facebook-java-api-3.0.2/lib" recursive="false" />
+  </library>
+</component>
