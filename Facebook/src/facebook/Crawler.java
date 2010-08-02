@@ -84,7 +84,7 @@ public class Crawler {
         List<String> usersToCrawl = new ArrayList<String>();
         if(cli.hasOption("uc")) usersToCrawl.add((String)cmdHelper.getOptionValue("uc"));
         else if(cli.hasOption("ul")){
-            String fileName = (String)cmdHelper.getOptionValue("ul");
+            String fileName = (String)cmdHelper.getOptionValue("ul"); // This line is only there to check if we are getting the file name correctly
             FileUtil.loadFile("UserIDs", usersToCrawl);
         }
         else return false;
